@@ -4,9 +4,10 @@ class Config(object):
     '''
     configuration used in deep net experiment 
     '''
-    def __init__(self, batch_size=10, learning_rate=0.001, saver_dir, num_epoch, loss_type, log_dir, log_file, recon_dir, max_model_to_keep=None):
+    def __init__(self, batch_size, learning_rate, experiment_name, saver_dir, num_epoch, loss_type, log_dir, log_file, recon_dir, max_model_to_keep=200):
         self.batch_size = batch_size
         self.learning_rate = learning_rate 
+        self.experiment_name = experiment_name
         self.saver_dir = saver_dir # 'Directory to save the trained model
         self.num_epoch = num_epoch # 'Number of epochs to run trainer
         self.loss_type = loss_type 
