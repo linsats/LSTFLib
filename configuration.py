@@ -15,3 +15,6 @@ class Config(object):
         self.log_file = log_file
         self.recon_dir = recon_dir
         self.max_model_to_keep = max_model_to_keep #'max saved models'
+
+    def to_string():
+        return 'experiment_name:' + experiment_name + '\n' + 'batch_size:' + self.batch_size + '\n' + 'learning_rate:' + self.learning_rate + '\n'
